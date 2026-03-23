@@ -1,5 +1,6 @@
 # AI Study Assistant
 
+Developed as part of the Future Talent Program AI-supported application development module using Cursor.
 A simple web application for student study support, built with a Node.js + Express backend and a minimal HTML/CSS/JavaScript frontend.
 
 ## Features
