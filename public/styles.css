@@ -1,1 +1,73 @@
+:root {
+  font-weight: 600;
+  cursor: pointer;
+}
 
+button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.status {
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.results {
+  margin-top: 16px;
+}
+
+.results-empty {
+  color: var(--muted);
+}
+
+.results-body {
+  margin-top: 8px;
+}
+
+.result-title {
+  margin: 0 0 8px;
+  font-size: 20px;
+}
+
+.result-summary {
+  margin: 0 0 12px;
+  color: var(--muted);
+  line-height: 1.5;
+}
+
+.result-section-title {
+  margin: 18px 0 10px;
+  font-size: 16px;
+  color: var(--muted);
+}
+
+.result-bullets {
+  margin: 0;
+  padding-left: 18px;
+}
+
+.result-bullets li {
+  margin: 8px 0;
+  color: var(--text);
+}
+
+.result-questions {
+  margin: 0;
+  padding-left: 18px;
+}
+
+.result-questions li {
+  margin: 10px 0;
+  color: var(--text);
+  line-height: 1.5;
+}
+
+.result-error {
+  margin-top: 12px;
+  padding: 10px 12px;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 90, 122, 0.35);
+  background: rgba(255, 90, 122, 0.12);
+  color: #ffd0d9;
+}
