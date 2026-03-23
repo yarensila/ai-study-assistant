@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI Study Assistant</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <main class="container">
+      <header class="header">
+        <h1>AI Study Assistant</h1>
+        <p class="subtle">
+          Paste text, click summarize, and get a title, short summary, 3 bullet points, and 3 exam-style questions.
+        </p>
+      </header>
+
+      <section class="card">
+        <label class="label" for="textInput">Text</label>
+        <textarea
+          id="textInput"
+          rows="10"
+          placeholder="Paste a long piece of text here..."
+        ></textarea>
+
+        <div class="actions">
+          <button id="summarizeBtn" type="button">Summarize</button>
+          <span id="status" class="status" aria-live="polite"></span>
+        </div>
+      </section>
+
+      <section id="results" class="card results" aria-live="polite">
+        <div class="results-empty" id="resultsEmpty">Results will appear here.</div>
+
+        <div class="results-body" id="resultsBody" hidden>
+          <h2 id="resultTitle" class="result-title"></h2>
+          <p id="resultSummary" class="result-summary"></p>
+          <ul id="resultBullets" class="result-bullets"></ul>
+          <h3 class="result-section-title">Possible Exam Questions</h3>
+          <ol id="resultQuestions" class="result-questions"></ol>
+          <div id="resultError" class="result-error" hidden></div>
+        </div>
+      </section>
+    </main>
+
+    <script src="/app.js"></script>
+  </body>
+</html>
+
